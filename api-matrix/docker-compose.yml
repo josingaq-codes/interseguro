@@ -1,0 +1,14 @@
+version: "3.9"
+
+services:
+  api-matrix:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: api-matrix:latest
+    container_name: api-matrix
+    env_file:
+      - .env
+    ports:
+      - "${PORT:-4000}:4000"
+    restart: unless-stopped

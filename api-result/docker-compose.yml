@@ -1,0 +1,14 @@
+version: "3.9"
+
+services:
+  api-result:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: api-result:latest
+    container_name: api-result
+    env_file:
+      - .env
+    ports:
+      - "${PORT:-4001}:4001"
+    restart: unless-stopped
