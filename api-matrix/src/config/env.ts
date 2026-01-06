@@ -9,6 +9,7 @@ const environment = z.object({
     .string()
     .min(32, "JWT_SECRET must be at least 32 characters long"),
   FRONTEND_URL: z.string().url().default("http://localhost:3000"),
+  API_RESULT_URL: z.string().url().default("http://localhost:4001"),
 });
 
 const env = environment.parse(process.env);
@@ -17,3 +18,4 @@ export const PORT = env.PORT;
 export const JWT_SECRET = env.JWT_SECRET;
 export const JWT_EXPIRES_IN = "5m";
 export const FRONTEND_URL = env.FRONTEND_URL;
+export const API_RESULT_URL = env.API_RESULT_URL;

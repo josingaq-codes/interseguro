@@ -28,6 +28,7 @@ export const requireAuth = (
     }
 
     res.locals.auth = { userId: payload.sub, email: payload.email };
+    res.locals.token = token;
 
     next();
   } catch {
