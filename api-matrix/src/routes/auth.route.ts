@@ -7,7 +7,7 @@ import { signInSchema } from "../schemas/auth.schema.js";
 
 const DEMO_USER = {
   id: "abcd-1234-efgh-5678",
-  email: "jose.inga@interseguro.com.pe",
+  email: "jose.inga@email.com",
   password: "J0S3!NG@26",
 };
 

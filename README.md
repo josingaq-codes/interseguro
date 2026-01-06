@@ -13,7 +13,7 @@
   - **Body:**
     ```json
     {
-      "email": "jose.inga@interseguro.com.pe",
+      "email": "jose.inga@email.com",
       "password": "J0S3!NG@26"
     }
     ```
