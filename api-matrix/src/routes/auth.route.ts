@@ -7,8 +7,8 @@ import { signInSchema } from "../schemas/auth.schema.js";
 
 const DEMO_USER = {
   id: "abcd-1234-efgh-5678",
-  email: "user@email.com",
-  password: "password",
+  email: "jose.inga@interseguro.com.pe",
+  password: "J0S3!NG@26",
 };
 
 export const auth = express();

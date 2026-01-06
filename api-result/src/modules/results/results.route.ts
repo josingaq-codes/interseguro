@@ -16,7 +16,7 @@ results.post("/", validateBody(qrSchema), (req, res) => {
   const min = Math.min(...values.flat());
   const sum = values.flat().reduce((acc, v) => acc + v, 0);
   const avg = sum / values.flat().length;
-  const diagnonal = matrices.map((matrix) => matrix.diagonal());
+  const diagonal = matrices.map((matrix) => matrix.diagonal());
 
-  res.json({ maximum: max, minimum: min, average: avg, diagnonal });
+  res.json({ maximum: max, minimum: min, average: avg, diagonal });
 });
